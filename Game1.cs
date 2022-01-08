@@ -112,12 +112,9 @@ namespace monogame
             // TODO: Add your drawing code here
             spriteBatch.Begin();
 
-            if (camera.Draw(ref spriteBatch) == false)
-            {
-
-            }
-
-          //  spriteBatch.Draw(background, new Rectangle(0, 0, _graphics.PreferredBackBufferWidth * 2, _graphics.PreferredBackBufferHeight * 2), Color.White);
+            camera.Draw(ref spriteBatch);
+            
+              //  spriteBatch.Draw(background, new Rectangle(0, 0, _graphics.PreferredBackBufferWidth * 2, _graphics.PreferredBackBufferHeight * 2), Color.White);
 
             spriteBatch.End();
 

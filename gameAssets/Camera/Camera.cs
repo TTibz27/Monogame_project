@@ -41,7 +41,7 @@ namespace monogame.gameAssets
       
         }
 
-        public bool Draw(ref SpriteBatch spriteBatch) {
+        public void Draw(ref SpriteBatch spriteBatch) {
 
             // convert world units to pixels
 
@@ -56,7 +56,7 @@ namespace monogame.gameAssets
                     Color.White);
 
             }
-            return true;
+           
         }
     }
 }
