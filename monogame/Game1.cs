@@ -100,6 +100,7 @@ namespace monogame
 
                 // TODO: Add your update logic here
 
+         // This is basically just debug for the camera atm
         KeyboardState state = Keyboard.GetState();
             if (state.IsKeyDown(Keys.Right))
                     camera.moveCamera(10,0);
