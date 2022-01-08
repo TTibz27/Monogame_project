@@ -4,10 +4,10 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/tomdt/source/repos/monogame/monogame/Content/earth.png</File>
-    <File>C:/Users/tomdt/source/repos/monogame/monogame/Content/shuttle.png</File>
-    <File>C:/Users/tomdt/source/repos/monogame/monogame/Content/stars.jpg</File>
-    <File>C:/Users/tomdt/source/repos/monogame/monogame/Content/test.png</File>
+    <File>/Users/tibble/Documents/GitHub/Monogame_project/monogame/Content/earth.png</File>
+    <File>/Users/tibble/Documents/GitHub/Monogame_project/monogame/Content/shuttle.png</File>
+    <File>/Users/tibble/Documents/GitHub/Monogame_project/monogame/Content/stars.jpg</File>
+    <File>/Users/tibble/Documents/GitHub/Monogame_project/monogame/Content/test.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

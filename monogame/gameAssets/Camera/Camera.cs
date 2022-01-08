@@ -15,11 +15,13 @@ namespace monogame.gameAssets
         private  Scene _scene;
         
         //world units
-        public double CameraPositionX;
-        public double CameraPositionY;
+        private double CameraPositionX;
+        private double CameraPositionY;
         //world units
         public double ViewPortHeight;
         public double ViewPortWidth;
+
+        readonly public double  ViewportMinSize = 10;
 
 
         public Camera( ref GraphicsDeviceManager graphics, ref Scene scene) {
@@ -48,15 +50,42 @@ namespace monogame.gameAssets
             //viewport is  = screen height width
 
             int bgHeightPx = (int) (_scene.WorldHeight * Game1.screenHeight / this.ViewPortHeight);
-            int bgWidthPx = (int)(_scene.WorldHeight * Game1.screenHeight / this.ViewPortHeight);
+            int bgWidthPx = (int)(_scene.WorldWidth * Game1.screenWidth / this.ViewPortWidth);
+
+            //move camera origin to correct point
+            int positionOffsetY = (int)((_scene.WorldHeight - CameraPositionY) * Game1.screenHeight / this.ViewPortHeight)* -1;
+            int positionOffsetX = (int)(CameraPositionX * Game1.screenWidth / this.ViewPortWidth) * -1;
+
+            //center camera on correct point
+            positionOffsetX += (Game1.screenWidth / 2);
+            positionOffsetY += (Game1.screenHeight / 2);
 
             if (_scene.mainBackground != null) {
                 spriteBatch.Draw(_scene.mainBackground,
-                    new Rectangle(0, 0, bgWidthPx, bgHeightPx),
+                    new Rectangle(positionOffsetX, positionOffsetY, bgWidthPx, bgHeightPx),
                     Color.White);
 
             }
            
+        }
+
+        public void changeZoom(double viewportAdjust)
+        {
+            ViewPortHeight += viewportAdjust;
+            if (ViewPortHeight < ViewportMinSize) {
+                ViewPortHeight = ViewportMinSize;
+            }
+            ViewPortWidth = (ViewPortHeight * Game1.screenWidth) / Game1.screenHeight; // match screen's aspect ratio
+        }
+
+        public void changeCenter(double worldX, double worldY)
+        {
+            this.CameraPositionX = worldX;
+            this.CameraPositionY = worldY;
+        }
+        public void moveCamera(double x, double y) {
+            this.CameraPositionY += y;
+            this.CameraPositionX += x;
         }
     }
 }

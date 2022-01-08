@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{E6CFF406-CDAA-42A3-9AA5-067C6CD9B0C2}|Default">
+  <MonoDevelop.Ide.ItemProperties.monogame PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="monogame/Game1.cs">
+    <Files>
+      <File FileName="monogame/Game1.cs" Line="101" Column="12" />
+      <File FileName="monogame/gameAssets/Camera/Camera.cs" Line="60" Column="52" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="monogame" expanded="True">
+            <Node name="monogame" expanded="True">
+              <Node name="gameAssets" expanded="True">
+                <Node name="Camera" expanded="True" />
+              </Node>
+              <Node name="Game1.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

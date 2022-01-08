@@ -1,30 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tomdt\\source\\repos\\monogame\\monogame\\monogame.csproj": {}
+    "/Users/tibble/Documents/GitHub/Monogame_project/monogame/monogame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tomdt\\source\\repos\\monogame\\monogame\\monogame.csproj": {
+    "/Users/tibble/Documents/GitHub/Monogame_project/monogame/monogame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tomdt\\source\\repos\\monogame\\monogame\\monogame.csproj",
+        "projectUniqueName": "/Users/tibble/Documents/GitHub/Monogame_project/monogame/monogame.csproj",
         "projectName": "monogame",
-        "projectPath": "C:\\Users\\tomdt\\source\\repos\\monogame\\monogame\\monogame.csproj",
-        "packagesPath": "C:\\Users\\tomdt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tomdt\\source\\repos\\monogame\\monogame\\obj\\",
+        "projectPath": "/Users/tibble/Documents/GitHub/Monogame_project/monogame/monogame.csproj",
+        "packagesPath": "/Users/tibble/.nuget/packages/",
+        "outputPath": "/Users/tibble/Documents/GitHub/Monogame_project/monogame/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\tomdt\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/tibble/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -67,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
         }
       }
     }

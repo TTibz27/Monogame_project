@@ -97,7 +97,23 @@ namespace monogame
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
+
+                // TODO: Add your update logic here
+
+        KeyboardState state = Keyboard.GetState();
+            if (state.IsKeyDown(Keys.Right))
+                    camera.moveCamera(10,0);
+            if (state.IsKeyDown(Keys.Left))
+                camera.moveCamera(-10, 0);
+            if (state.IsKeyDown(Keys.Up))
+                camera.moveCamera(0,10);
+            if (state.IsKeyDown(Keys.Down))
+                camera.moveCamera(0,-10);
+
+            if (state.IsKeyDown(Keys.OemComma))
+                camera.changeZoom(-10);
+            if (state.IsKeyDown(Keys.OemPeriod))
+                camera.changeZoom(10);
 
             base.Update(gameTime);
         }
