@@ -2,6 +2,12 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Contentless/3.0.6": {
+        "type": "package",
+        "build": {
+          "build/Contentless.targets": {}
+        }
+      },
       "MonoGame.Content.Builder.Task/3.8.0.1641": {
         "type": "package",
         "build": {
@@ -58,6 +64,79 @@
     }
   },
   "libraries": {
+    "Contentless/3.0.6": {
+      "sha512": "fGaARFLzzFDSF5cFiv+L/uou+28GSwb04MX9blESi7cFlddpKnZ8WcXVSkoQSWv7C19CxTIXX/cGvzFnd6u1+g==",
+      "type": "package",
+      "path": "contentless/3.0.6",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Logo.png",
+        "README.md",
+        "build/Contentless.targets",
+        "contentless.3.0.6.nupkg.sha512",
+        "contentless.nuspec",
+        "lib/net5.0/_._",
+        "tools/ATI.TextureConverter.dll",
+        "tools/AssimpNet.dll",
+        "tools/Contentless.deps.json",
+        "tools/Contentless.dll",
+        "tools/Contentless.exe",
+        "tools/Contentless.pdb",
+        "tools/Contentless.runtimeconfig.dev.json",
+        "tools/Contentless.runtimeconfig.json",
+        "tools/CppNet.dll",
+        "tools/MonoGame.Framework.Content.Pipeline.dll",
+        "tools/MonoGame.Framework.dll",
+        "tools/Newtonsoft.Json.dll",
+        "tools/Nvidia.TextureTools.dll",
+        "tools/PVRTexLibNET.dll",
+        "tools/SharpDX.D3DCompiler.dll",
+        "tools/SharpDX.dll",
+        "tools/SharpFont.dll",
+        "tools/ref/Contentless.dll",
+        "tools/runtimes/linux-x64/native/libPVRTexLibWrapper.so",
+        "tools/runtimes/linux-x64/native/libSDL2-2.0.so.0",
+        "tools/runtimes/linux-x64/native/libassimp.so",
+        "tools/runtimes/linux-x64/native/libfreeimage-3.17.0.so",
+        "tools/runtimes/linux-x64/native/libfreetype.6.so",
+        "tools/runtimes/linux-x64/native/libnvcore.so",
+        "tools/runtimes/linux-x64/native/libnvimage.so",
+        "tools/runtimes/linux-x64/native/libnvmath.so",
+        "tools/runtimes/linux-x64/native/libnvtt.so",
+        "tools/runtimes/linux-x64/native/libopenal.so.1",
+        "tools/runtimes/linux-x64/native/libpng16.so.16",
+        "tools/runtimes/linux-x64/native/linux/ffmpeg",
+        "tools/runtimes/linux-x64/native/linux/ffprobe",
+        "tools/runtimes/osx-x64/native/libassimp.dylib",
+        "tools/runtimes/osx/native/libPVRTexLibWrapper.dylib",
+        "tools/runtimes/osx/native/libSDL2-2.0.0.dylib",
+        "tools/runtimes/osx/native/libfreeimage.dylib",
+        "tools/runtimes/osx/native/libfreetype.6.dylib",
+        "tools/runtimes/osx/native/libnvcore.dylib",
+        "tools/runtimes/osx/native/libnvimage.dylib",
+        "tools/runtimes/osx/native/libnvmath.dylib",
+        "tools/runtimes/osx/native/libnvtt.dylib",
+        "tools/runtimes/osx/native/libopenal.1.dylib",
+        "tools/runtimes/osx/native/libpng16.16.dylib",
+        "tools/runtimes/osx/native/osx/ffmpeg",
+        "tools/runtimes/osx/native/osx/ffprobe",
+        "tools/runtimes/win-x64/native/FreeImage.dll",
+        "tools/runtimes/win-x64/native/PVRTexLibWrapper.dll",
+        "tools/runtimes/win-x64/native/SDL2.dll",
+        "tools/runtimes/win-x64/native/assimp.dll",
+        "tools/runtimes/win-x64/native/ffmpeg.exe",
+        "tools/runtimes/win-x64/native/ffprobe.exe",
+        "tools/runtimes/win-x64/native/freetype6.dll",
+        "tools/runtimes/win-x64/native/libmojoshader_64.dll",
+        "tools/runtimes/win-x64/native/nvtt.dll",
+        "tools/runtimes/win-x64/native/soft_oal.dll",
+        "tools/runtimes/win-x86/native/SDL2.dll",
+        "tools/runtimes/win-x86/native/assimp.dll",
+        "tools/runtimes/win-x86/native/soft_oal.dll"
+      ]
+    },
     "MonoGame.Content.Builder.Task/3.8.0.1641": {
       "sha512": "oHA60q9MhkqGnSiJlXosdynD400sQ/j1Ef+0XkJYIQT4Io9RQ6Zk8i0vjpnIbQ0PgsoaQN3IRYjNzkhqq3uUGA==",
       "type": "package",
@@ -169,29 +248,36 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Contentless >= 3.0.6",
       "MonoGame.Content.Builder.Task >= 3.8.0.1641",
       "MonoGame.Framework.DesktopGL >= 3.8.0.1641"
     ]
   },
   "packageFolders": {
-    "/Users/tibble/.nuget/packages/": {}
+    "C:\\Users\\tomdt\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/tibble/Documents/GitHub/Monogame_project/monogame/monogame.csproj",
+      "projectUniqueName": "C:\\Users\\tomdt\\source\\repos\\monogame\\monogame\\monogame.csproj",
       "projectName": "monogame",
-      "projectPath": "/Users/tibble/Documents/GitHub/Monogame_project/monogame/monogame.csproj",
-      "packagesPath": "/Users/tibble/.nuget/packages/",
-      "outputPath": "/Users/tibble/Documents/GitHub/Monogame_project/monogame/obj/",
+      "projectPath": "C:\\Users\\tomdt\\source\\repos\\monogame\\monogame\\monogame.csproj",
+      "packagesPath": "C:\\Users\\tomdt\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tomdt\\source\\repos\\monogame\\monogame\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/tibble/.config/NuGet/NuGet.Config"
+        "C:\\Users\\tomdt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -210,6 +296,10 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
+          "Contentless": {
+            "target": "Package",
+            "version": "[3.0.6, )"
+          },
           "MonoGame.Content.Builder.Task": {
             "target": "Package",
             "version": "[3.8.0.1641, )"
@@ -234,7 +324,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

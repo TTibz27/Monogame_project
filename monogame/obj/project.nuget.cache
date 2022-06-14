@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "3xv2hfc/i6eLrtYeby1k6HVMU2aw7y4k8cD1tyRJ/4gOOn74sBA07wbeEHyuLtBokpXQlUNhB5CJvruZ/AhUkg==",
+  "dgSpecHash": "waMEa3K8bhTNgLQh/NQX1uGkvnsHamvRF3zbrc8imSoB0gllJuCjB6xM76pSvwNnAK3ujH5gjGg1Z/DOXnAk9A==",
   "success": true,
-  "projectFilePath": "/Users/tibble/Documents/GitHub/Monogame_project/monogame/monogame.csproj",
+  "projectFilePath": "C:\\Users\\tomdt\\source\\repos\\monogame\\monogame\\monogame.csproj",
   "expectedPackageFiles": [
-    "/Users/tibble/.nuget/packages/monogame.content.builder.task/3.8.0.1641/monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
-    "/Users/tibble/.nuget/packages/monogame.framework.desktopgl/3.8.0.1641/monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
+    "C:\\Users\\tomdt\\.nuget\\packages\\contentless\\3.0.6\\contentless.3.0.6.nupkg.sha512",
+    "C:\\Users\\tomdt\\.nuget\\packages\\monogame.content.builder.task\\3.8.0.1641\\monogame.content.builder.task.3.8.0.1641.nupkg.sha512",
+    "C:\\Users\\tomdt\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512"
   ],
   "logs": []
 }

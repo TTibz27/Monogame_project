@@ -15,17 +15,22 @@ namespace monogame
         private Texture2D background;
         private Texture2D shuttle;
         private Texture2D earth;
+        private Texture2D outrunCar;
         private bool FULLSCREEN;
+        private bool RES_1080;
 
         private Scene scene;
-        private Camera camera;
+        private Camera_2D camera;
+        private gameObjects.gameObject object1;
+        private gameObjects.gameObject object2;
 
         public static int screenHeight;
         public static int screenWidth;
 
         public Game1()
         {
-            FULLSCREEN = false;
+            FULLSCREEN = true;
+            RES_1080 = true;
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
@@ -55,11 +60,17 @@ namespace monogame
                 //    Game1.screenWidth = (int) Math.Round( Game1.screenHeight * ( 16.0 / 9.0 ));
                 //}
 
-              
+
                 _graphics.IsFullScreen = true;
             }
             // windowed mode
-            else {
+            else if (RES_1080)
+            {
+                Game1.screenHeight = 1080;
+                Game1.screenWidth = 1920;
+            }
+            else 
+            {
                 Game1.screenHeight = 720;
                 Game1.screenWidth = 1280;
             }
@@ -73,8 +84,8 @@ namespace monogame
             _graphics.ApplyChanges();
 
             // Add Scene and Camera
-            scene = new Scene(16000, 16000);
-            camera = new Camera(ref _graphics, ref scene);
+            scene = new Scene(244, 950);
+            camera = new Camera_2D(ref _graphics, ref scene);
 
             base.Initialize();
         }
@@ -84,11 +95,22 @@ namespace monogame
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // load your game content here
+            Texture2D staticBG = Content.Load<Texture2D>("sky");
+            Texture2D mainBG = Content.Load<Texture2D>("Full-Field");
             background = Content.Load<Texture2D>("test_bg"); // change these names to the names of your images
             shuttle = Content.Load<Texture2D>("shuttle");  // if you are using your own images.
             earth = Content.Load<Texture2D>("earth");
+            outrunCar = Content.Load<Texture2D>("outrun");
 
-            scene.setMainBackground(background);
+            object1 = new gameObjects.gameObject(122, 475, 993, 773, outrunCar);
+            object2 = new gameObjects.PlayerGameObject(122, 475, 993, 773, outrunCar);
+
+            scene.setStaticBackground(staticBG);
+            scene.setMainBackground(mainBG);
+            //scene.objects.Add(object1);
+            scene.objects.Add(object2);
+            camera.moveCamera(0, -50);
+            //scene.setMainBackground(background);
 
         }
 
@@ -112,9 +134,25 @@ namespace monogame
                 camera.moveCamera(0,-10);
 
             if (state.IsKeyDown(Keys.OemComma))
-                camera.changeZoom(-10);
-            if (state.IsKeyDown(Keys.OemPeriod))
                 camera.changeZoom(10);
+            if (state.IsKeyDown(Keys.OemPeriod))
+                camera.changeZoom(-10);
+
+
+
+            if (state.IsKeyDown(Keys.W))
+                object2.Move(0,10);
+            if (state.IsKeyDown(Keys.S))
+                object2.Move(0, -10);
+            if (state.IsKeyDown(Keys.A))
+                object2.Move(-10, 0);
+            if (state.IsKeyDown(Keys.D))
+                object2.Move(10, 0);
+
+
+            foreach (gameObjects.gameObject obj in scene.objects) {
+                obj.Update();
+            }
 
             base.Update(gameTime);
         }

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "monogame/1.0.0": {
         "dependencies": {
+          "Contentless": "3.0.6",
           "MonoGame.Content.Builder.Task": "3.8.0.1641",
           "MonoGame.Framework.DesktopGL": "3.8.0.1641"
         },
@@ -15,6 +16,7 @@
           "monogame.dll": {}
         }
       },
+      "Contentless/3.0.6": {},
       "MonoGame.Content.Builder.Task/3.8.0.1641": {},
       "MonoGame.Framework.DesktopGL/3.8.0.1641": {
         "runtime": {
@@ -73,6 +75,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Contentless/3.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fGaARFLzzFDSF5cFiv+L/uou+28GSwb04MX9blESi7cFlddpKnZ8WcXVSkoQSWv7C19CxTIXX/cGvzFnd6u1+g==",
+      "path": "contentless/3.0.6",
+      "hashPath": "contentless.3.0.6.nupkg.sha512"
     },
     "MonoGame.Content.Builder.Task/3.8.0.1641": {
       "type": "package",

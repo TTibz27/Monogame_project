@@ -1,5 +1,8 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"/Users/tibble/Documents/GitHub/Monogame_project/monogame/Content/earth.png","/Users/tibble/Documents/GitHub/Monogame_project/monogame/Content/bin/DesktopGL/Content/earth.xnb","TextureProcessor","Texture2DContent",52980,133301,0.311433
-"/Users/tibble/Documents/GitHub/Monogame_project/monogame/Content/shuttle.png","/Users/tibble/Documents/GitHub/Monogame_project/monogame/Content/bin/DesktopGL/Content/shuttle.xnb","TextureProcessor","Texture2DContent",9105,125045,0.008609
-"/Users/tibble/Documents/GitHub/Monogame_project/monogame/Content/stars.jpg","/Users/tibble/Documents/GitHub/Monogame_project/monogame/Content/bin/DesktopGL/Content/stars.xnb","TextureProcessor","Texture2DContent",150614,1920085,0.047455
-"/Users/tibble/Documents/GitHub/Monogame_project/monogame/Content/test.png","/Users/tibble/Documents/GitHub/Monogame_project/monogame/Content/bin/DesktopGL/Content/test_bg.xnb","TextureProcessor","Texture2DContent",81469,10240085,0.220468
+"C:/Users/tomdt/source/repos/monogame/monogame/Content/earth.png","C:/Users/tomdt/source/repos/monogame/monogame/Content/bin/DesktopGL/Content/earth.xnb","TextureProcessor","Texture2DContent",52980,133301,0.295545
+"C:/Users/tomdt/source/repos/monogame/monogame/Content/Full-Field.png","C:/Users/tomdt/source/repos/monogame/monogame/Content/bin/DesktopGL/Content/Full-Field.xnb","TextureProcessor","Texture2DContent",16644,927285,0.9029526
+"C:/Users/tomdt/source/repos/monogame/monogame/Content/outrun.png","C:/Users/tomdt/source/repos/monogame/monogame/Content/bin/DesktopGL/Content/outrun.xnb","TextureProcessor","Texture2DContent",119215,3070441,0.7415537
+"C:/Users/tomdt/source/repos/monogame/monogame/Content/shuttle.png","C:/Users/tomdt/source/repos/monogame/monogame/Content/bin/DesktopGL/Content/shuttle.xnb","TextureProcessor","Texture2DContent",9105,125045,0.0141201
+"C:/Users/tomdt/source/repos/monogame/monogame/Content/sky.png","C:/Users/tomdt/source/repos/monogame/monogame/Content/bin/DesktopGL/Content/sky.xnb","TextureProcessor","Texture2DContent",2394,358485,0.5431299
+"C:/Users/tomdt/source/repos/monogame/monogame/Content/stars.jpg","C:/Users/tomdt/source/repos/monogame/monogame/Content/bin/DesktopGL/Content/stars.xnb","TextureProcessor","Texture2DContent",150614,1920085,0.1283139
+"C:/Users/tomdt/source/repos/monogame/monogame/Content/test.png","C:/Users/tomdt/source/repos/monogame/monogame/Content/bin/DesktopGL/Content/test_bg.xnb","TextureProcessor","Texture2DContent",81469,10240085,0.5585706
